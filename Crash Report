@@ -1,0 +1,321 @@
+Time: 3/17/20 9:42 PM
+Description: Rendering overlay
+
+java.lang.NullPointerException: Rendering overlay
+	at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:770) ~[guava-21.0.jar:?] {}
+	at vazkii.botania.client.model.GunModel.<init>(GunModel.java:48) ~[?:r1.11-378] {re:classloading}
+	at vazkii.botania.client.core.handler.MiscellaneousIcons.onModelBake(MiscellaneousIcons.java:135) ~[?:r1.11-378] {re:classloading}
+	at net.minecraftforge.eventbus.ASMEventHandler_521_MiscellaneousIcons_onModelBake_ModelBakeEvent.invoke(.dynamic) ~[?:?] {}
+	at net.minecraftforge.eventbus.ASMEventHandler.invoke(ASMEventHandler.java:80) ~[eventbus-1.0.0-service.jar:?] {}
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-1.0.0-service.jar:?] {}
+	at net.minecraftforge.fml.javafmlmod.FMLModContainer.acceptEvent(FMLModContainer.java:168) ~[?:28.2] {re:classloading}
+	at net.minecraftforge.fml.ModLoader.lambda$postEvent$30(ModLoader.java:243) ~[?:?] {re:classloading}
+	at net.minecraftforge.fml.ModLoader$$Lambda$3892/1334775318.accept(Unknown Source) ~[?:?] {}
+	at java.util.HashMap.forEach(HashMap.java:1280) ~[?:1.8.0_51] {}
+	at net.minecraftforge.fml.ModList.forEachModContainer(ModList.java:217) ~[?:?] {re:classloading}
+	at net.minecraftforge.fml.ModLoader.postEvent(ModLoader.java:243) ~[?:?] {re:classloading}
+	at net.minecraftforge.client.ForgeHooksClient.onModelBake(ForgeHooksClient.java:379) ~[?:?] {re:classloading}
+	at net.minecraft.client.renderer.model.ModelManager.func_212853_a_(ModelManager.java:62) ~[?:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.client.renderer.model.ModelManager.func_212853_a_(ModelManager.java:17) ~[?:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.client.resources.ReloadListener.func_215269_a(SourceFile:13) ~[?:?] {re:classloading}
+	at net.minecraft.client.resources.ReloadListener$$Lambda$7198/350084111.accept(Unknown Source) ~[?:?] {}
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:656) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:632) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:442) ~[?:1.8.0_51] {}
+	at net.minecraft.resources.AsyncReloader.func_219557_a(SourceFile:71) ~[?:?] {re:classloading}
+	at net.minecraft.resources.AsyncReloader$$Lambda$8984/1477013933.run(Unknown Source) ~[?:?] {}
+	at net.minecraft.util.concurrent.ThreadTaskExecutor.func_213166_h(ThreadTaskExecutor.java:170) ~[?:?] {re:classloading,pl:accesstransformer:B,xf:OptiFine:default}
+	at net.minecraft.util.concurrent.RecursiveEventLoop.func_213166_h(SourceFile:23) ~[?:?] {re:classloading}
+	at net.minecraft.util.concurrent.ThreadTaskExecutor.func_213168_p(ThreadTaskExecutor.java:135) ~[?:?] {re:classloading,pl:accesstransformer:B,xf:OptiFine:default}
+	at net.minecraft.util.concurrent.ThreadTaskExecutor.func_213160_bf(ThreadTaskExecutor.java:115) ~[?:?] {re:classloading,pl:accesstransformer:B,xf:OptiFine:default}
+	at net.minecraft.client.Minecraft.func_195542_b(Minecraft.java:861) [?:?] {re:classloading,pl:accesstransformer:B,xf:fml:randompatches:RandomPatches Minecraft Transformer,xf:fml:screenshotclipboard:coremodone,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:384) [?:?] {re:classloading,pl:accesstransformer:B,xf:fml:randompatches:RandomPatches Minecraft Transformer,xf:fml:screenshotclipboard:coremodone,pl:runtimedistcleaner:A}
+	at net.minecraft.client.main.Main.main(SourceFile:155) [?:?] {re:classloading}
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_51] {}
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_51] {}
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_51] {}
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[?:1.8.0_51] {}
+	at net.minecraftforge.fml.loading.FMLClientLaunchProvider.lambda$launchService$0(FMLClientLaunchProvider.java:56) [forge-1.14.4-28.2.3.jar:28.2] {}
+	at net.minecraftforge.fml.loading.FMLClientLaunchProvider$$Lambda$411/2011857007.call(Unknown Source) [forge-1.14.4-28.2.3.jar:28.2] {}
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:37) [modlauncher-4.1.0.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:54) [modlauncher-4.1.0.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:72) [modlauncher-4.1.0.jar:?] {}
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:81) [modlauncher-4.1.0.jar:?] {}
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:65) [modlauncher-4.1.0.jar:?] {}
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Client thread
+Stacktrace:
+	at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:770)
+	at vazkii.botania.client.model.GunModel.<init>(GunModel.java:48)
+	at vazkii.botania.client.core.handler.MiscellaneousIcons.onModelBake(MiscellaneousIcons.java:135)
+	at net.minecraftforge.eventbus.ASMEventHandler_521_MiscellaneousIcons_onModelBake_ModelBakeEvent.invoke(.dynamic)
+	at net.minecraftforge.eventbus.ASMEventHandler.invoke(ASMEventHandler.java:80)
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258)
+	at net.minecraftforge.fml.javafmlmod.FMLModContainer.acceptEvent(FMLModContainer.java:168)
+	at net.minecraftforge.fml.ModLoader.lambda$postEvent$30(ModLoader.java:243)
+	at net.minecraftforge.fml.ModLoader$$Lambda$3892/1334775318.accept(Unknown Source)
+	at java.util.HashMap.forEach(HashMap.java:1280)
+	at net.minecraftforge.fml.ModList.forEachModContainer(ModList.java:217)
+	at net.minecraftforge.fml.ModLoader.postEvent(ModLoader.java:243)
+	at net.minecraftforge.client.ForgeHooksClient.onModelBake(ForgeHooksClient.java:379)
+	at net.minecraft.client.renderer.model.ModelManager.func_212853_a_(ModelManager.java:62)
+	at net.minecraft.client.renderer.model.ModelManager.func_212853_a_(ModelManager.java:17)
+	at net.minecraft.client.resources.ReloadListener.func_215269_a(SourceFile:13)
+	at net.minecraft.client.resources.ReloadListener$$Lambda$7198/350084111.accept(Unknown Source)
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:656)
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:632)
+	at java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:442)
+	at net.minecraft.resources.AsyncReloader.func_219557_a(SourceFile:71)
+	at net.minecraft.resources.AsyncReloader$$Lambda$8984/1477013933.run(Unknown Source)
+	at net.minecraft.util.concurrent.ThreadTaskExecutor.func_213166_h(ThreadTaskExecutor.java:170)
+	at net.minecraft.util.concurrent.RecursiveEventLoop.func_213166_h(SourceFile:23)
+	at net.minecraft.util.concurrent.ThreadTaskExecutor.func_213168_p(ThreadTaskExecutor.java:135)
+
+-- Overlay render details --
+Details:
+	Overlay name: net.minecraft.client.gui.ResourceLoadProgressGui
+Stacktrace:
+	at net.minecraft.client.renderer.GameRenderer.func_195458_a(GameRenderer.java:880)
+	at net.minecraft.client.Minecraft.func_195542_b(Minecraft.java:890)
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:384)
+	at net.minecraft.client.main.Main.main(SourceFile:155)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at net.minecraftforge.fml.loading.FMLClientLaunchProvider.lambda$launchService$0(FMLClientLaunchProvider.java:56)
+	at net.minecraftforge.fml.loading.FMLClientLaunchProvider$$Lambda$411/2011857007.call(Unknown Source)
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:37)
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:54)
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:72)
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:81)
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:65)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.14.4
+	Minecraft Version ID: 1.14.4
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_51, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 3669758536 bytes (3499 MB) / 4607967232 bytes (4394 MB) up to 9544663040 bytes (9102 MB)
+	CPUs: 12
+	JVM Flags: 5 total; -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump -Xss1M -Xmx10240m -Xms256m -XX:PermSize=256m
+	ModLauncher: 4.1.0+62+5bfa59b
+	ModLauncher launch target: fmlclient
+	ModLauncher naming: srg
+	ModLauncher services: 
+		/eventbus-1.0.0-service.jar eventbus PLUGINSERVICE 
+		/forge-1.14.4-28.2.3.jar object_holder_definalize PLUGINSERVICE 
+		/forge-1.14.4-28.2.3.jar runtime_enum_extender PLUGINSERVICE 
+		/accesstransformers-1.0.5-shadowed.jar accesstransformer PLUGINSERVICE 
+		/forge-1.14.4-28.2.3.jar capability_inject_definalize PLUGINSERVICE 
+		/forge-1.14.4-28.2.3.jar runtimedistcleaner PLUGINSERVICE 
+		/OptiFine_1.14.4_HD_U_F4.jar OptiFine TRANSFORMATIONSERVICE 
+		/forge-1.14.4-28.2.3.jar fml TRANSFORMATIONSERVICE 
+	FML: 28.2
+	Forge: net.minecraftforge:28.2.3
+	FML Language Providers: 
+		javafml@28.2
+		minecraft@1
+		kotlinfml@1.4.0
+		kotori_scala@2.13.1-build-6
+	Mod List: 
+		tetra-1.14.4-1.25.0.jar Tetra {tetra@1.14.4-1.25.0 DONE}
+		CyclopsCore-1.14.4-1.6.1.jar Cyclops Core {cyclopscore@1.6.1 DONE}
+		justenoughbeacons-1.2.jar Just Enough Beacons {justenoughbeacons@1.2 DONE}
+		autorun-1.14.4-1.0.5.jar Auto-Sprint {autorun@1.14.4-1.0.5 DONE}
+		curiousshulkerboxes-FORGE-1.14.4-1.0.0.2.jar Curious Shulker Boxes {curiousshulkerboxes@FORGE-1.14.4-1.0.0.2 DONE}
+		SilentMechanisms-1.14.4-0.6.13+49.jar Silent's Mechanisms {silents_mechanisms@0.6.13+49 DONE}
+		modnametooltip_1.14.3-1.12.1.jar Mod Name Tooltip {modnametooltip@1.12.1 DONE}
+		KleeSlabs_1.14.4-7.4.8.jar KleeSlabs {kleeslabs@7.4.8 DONE}
+		rsgauges-1.14.4-1.2.2-b1.jar Gauges and Switches {rsgauges@1.2.2-b1 DONE}
+		findme-1.14.4-1.1.0.13.jar Find Me {findme@NONE DONE}
+		Neat 1.5-19.jar Neat {neat@1.5-19 DONE}
+		IronJetpacks-1.14.4-2.0.3.jar Iron Jetpacks {ironjetpacks@2.0.3 DONE}
+		glassential-forge-1.14.4-1.1.1.jar Glassential {glassential@1.1.1 DONE}
+		xnet-1.14-1.8.7-alpha.jar XNet {xnet@1.14-1.8.7-alpha DONE}
+		XaerosWorldMap_1.5.5_Forge_1.14.4.jar Xaero's World Map {xaeroworldmap@1.5.5 DONE}
+		CookingForBlockheads_1.14.4-7.4.4.jar Cooking for Blockheads {cookingforblockheads@7.4.4 DONE}
+		Controlling-5.0.6.jar Controlling {controlling@5.0.6 DONE}
+		Placebo-1.14.4-2.3.5.jar Placebo {placebo@2.3.5 DONE}
+		citadel-1.0.4-1.14.4.jar Citadel {citadel@1.0.4 DONE}
+		Powah-1.14.4-0.2.7.jar Powah {powah@0.2.7 DONE}
+		mightyarchitect-mc1.14.4_v0.5.jar The Mighty Architect {mightyarchitect@0.5 DONE}
+		Fence Jumper-1.14.4-1.0.8.jar FenceJumper {fencejumper@version DONE}
+		Bookshelf-1.14.4-4.4.72.jar Bookshelf {bookshelf@4.4.72 DONE}
+		randompatches-1.14.4-1.21.0.0.jar RandomPatches {randompatches@1.14.4-1.21.0.0 DONE}
+		buildinggadgets-3.1.1b.jar Building Gadgets {buildinggadgets@3.1.1b DONE}
+		DarkUtilities-1.14.4-2.0.13.jar Dark Utilities {darkutils@2.0.13 DONE}
+		Apotheosis-1.14.4-2.4.4.jar Apotheosis {apotheosis@2.4.4 DONE}
+		Morpheus-1.14.4-4.2.44.jar Morpheus {morpheus@version DONE}
+		FpsReducer-mc1.14.4-1.14.1.jar FPS Reducer {fpsreducer@mc1.14.4-1.14.1 DONE}
+		TMechworks-1.14.4-2.0.1.jar Tinkers' Mechworks {tmechworks@2.0.1 DONE}
+		JustEnoughResources-1.14.4-0.10.1.74.jar Just Enough Resources {jeresources@0.10.1.74 DONE}
+		TOOLKIT-1.4.2.jar Tool Kit {toolkit@1.4.2 DONE}
+		shetiphiancore-1.14-3.6.1.jar ShetiPhian-Core {shetiphiancore@3.6.1 DONE}
+		mysticallib-1.14.4-1.14.0.jar Mystical Lib {mysticallib@1.14.4-1.14.0 DONE}
+		refinedstorage-1.7.3.jar Refined Storage {refinedstorage@1.7.3 DONE}
+		PackMenu-1.14.4-0.2.4.jar Pack Menu {packmenu@0.2.4 DONE}
+		mcw-bridges-1.0.4-mc1.14.4.jar Macaw's Bridges {mcwbridges@1.0.4 DONE}
+		industrial-foregoing-1.14.4-2.1.2-582ea8b.jar Industrial Foregoing {industrialforegoing@2.1.2 DONE}
+		dwmh-1.14.4-3.1.1.jar Dude! Where's my Horse? {dwmh@1.14.4-3.1.1 DONE}
+		torchmaster-2.0.0-rc2.jar Torchmaster {torchmaster@2.0.0-rc2 DONE}
+		cndtpd_1.14-1.0.jar Conduits Prevent Drowned {cndtpd@1.0 DONE}
+		turf-1.14.4-1.0.0.jar Turf {turf@1.0.0 DONE}
+		CommonCapabilities-1.14.4-2.4.4.jar CommonCapabilities {commoncapabilities@2.4.4 DONE}
+		Geolosys-1.14.4-4.0.11.jar Geolosys {geolosys@4.0.11 DONE}
+		BiomesOPlenty-1.14.4-9.0.0.262-universal.jar Biomes O' Plenty {biomesoplenty@1.14.4-9.0.0.259 DONE}
+		Lollipop-1.14.4-0.0.23.jar Lollipop {lollipop@0.0.23 DONE}
+		practicaltools-1.14.4-1.4.jar Practical Tools {practicaltools@1.14.4-1.4 DONE}
+		LetSleepingDogsLie-1.14.4-1.1.0.jar Let Sleeping Dogs Lie {dogslie@1.1.0 DONE}
+		simplefarming-1.14.4-1.2.8.jar Simple Farming {simplefarming@1.14.4-1.2.8 DONE}
+		LLOverlayReloaded-1.2.4-mc1.14.4.jar Light Level Overlay Reloaded {llor@1.2.4-mc1.14.4 DONE}
+		fishingreal-1.1.jar Fishing Real {fishingreal@1.1 DONE}
+		fairylights-2.1.15-1.14.4.jar Fairy Lights {fairylights@2.1.15 DONE}
+		simplybackpacks-1.14.4-1.4.0.jar Simply Backpacks {simplybackpacks@1.14.4-1.4.0 DONE}
+		portality-1.14.4-2.0.4-b0b3467.jar Portality {portality@2.0.4 DONE}
+		curios-FORGE-1.14.4-1.0.6.1.jar Curios API {curios@FORGE-1.14.4-1.0.6.1 DONE}
+		Botania r1.11-378.jar Botania {botania@r1.11-378 DONE}
+		Patchouli-1.14.4-1.1-26.jar Patchouli {patchouli@1.14.4-1.1-25 DONE}
+		corail_woodcutter-1.1.1-1.14.4.jar Corail Woodcutter {corail_woodcutter@1.1.1 DONE}
+		AutoRegLib-1.4-35.jar AutoRegLib {arl@1.4-35 DONE}
+		RandomThings-MC1.14.4-5.0.1.jar Random Things {randomthings@5.0.1 DONE}
+		extlights-1.8.jar Extended Lights {extlights@1.8 DONE}
+		TorchBandolier-1.14.4-1.3.2+7.jar Torch Bandolier {torchbandolier@1.3.2+7 DONE}
+		OreExcavation-1.6.147.jar Ore Excavation {oreexcavation@NONE DONE}
+		angelring-1.1.0.jar Angel Ring {angelring@1.1.0 DONE}
+		libnonymous-1.14.4-1.0.4.25.jar Libnonymous {libnonymous@1.0.4.25 DONE}
+		elevatorid-1.14.4-1.5.2.jar Elevator Mod {elevatorid@1.14.4-1.5.2 DONE}
+		tombstone-4.2.4-1.14.4.jar Corail Tombstone {tombstone@4.2.4 DONE}
+		hidden-levers.jar Hidden Levers {hiddenlevers@1.0 DONE}
+		curiouselytra-FORGE-1.14.4-1.0.jar Curious Elytra {curiouselytra@FORGE-1.14.4-1.0 DONE}
+		UpgradeModifiers-1.14.4-1.0.3.jar UpgradeModifiers {upgrademodifiers@1.0.3 DONE}
+		globalxp-1.14.4-v1.4.10.jar Global XP {globalxp@v1.4.10 DONE}
+		authme-1.14_1.15-1.1.1.jar Auth Me {authme@1.1.1 DONE}
+		BetterBurning-1.14.4-1.0.1.jar BetterBurning {betterburning@1.0.1 DONE}
+		CobbleForDays-1.0.2.jar Cobble For Days {cobblefordays@NONE DONE}
+		ServerTabInfo-1.14.4-1.2.6.jar Server Tab Info {servertabinfo@1.2.6 DONE}
+		SimpleDiscordRichPresence-1.0.3.jar Simple Discord Rich Presence {sdrp@1.0.3 DONE}
+		StevesFactoryManager-1.14.4-3.0.0-alpha26.jar Steve's Factory Manager {sfm@1.14.4-3.0.0-alpha DONE}
+		DangerousStoneCutter-1.14.4-1.2.0.jar Dangerous Stone Cutter {dangerousstonecutter@1.2.0 DONE}
+		Cyclic-1.14.4-0.1.3.jar Cyclic {cyclic@1.14.4-0.1.3 DONE}
+		BetterAdvancements-1.14.4-0.1.0.94.jar Better Advancements {betteradvancements@0.1.0.94 DONE}
+		inventorysorter-1.14.4-16.2.0.jar Simple Inventory Sorter {inventorysorter@16.2.0 DONE}
+		Cucumber-1.14.4-2.0.6.jar Cucumber Library {cucumber@2.0.6 DONE}
+		TrashSlot_1.14.4-10.4.8.jar TrashSlot {trashslot@10.4.8 DONE}
+		torchslabmod-1.14.4_v1.5.jar Torch Slab Mod {torchslabmod@1.5 DONE}
+		InventorySpam-1.14.4-1.2.3.jar Inventory Spam {inventoryspam@version DONE}
+		EquipmentTooltips-1.14.4-1.3.2+10.jar Equipment Tooltips {equipmenttooltips@1.3.2+10 DONE}
+		creeperfix-1.14.4-1.3.jar CreeperFix {creeperfix@1.3 DONE}
+		craftingstation-2.1.6.jar Crafting Station {craftingstation@2.1.6 DONE}
+		Bountiful Baubles-1.14.4-0.0.3.jar Bountiful Baubles {bountifulbaubles@NONE DONE}
+		bambooblocks-1.2.12.jar Bamboo Blocks {bambooblocks@1.2.11 DONE}
+		PersistentBits-1.14.4-2.0.2.jar Persistent Bits {persistentbits@2.0.2 DONE}
+		jei-1.14.4-6.0.0.27.jar Just Enough Items {jei@6.0.0.27 DONE}
+		EverlastingAbilities-1.14.4-1.6.0.jar EverlastingAbilities {everlastingabilities@1.6.0 DONE}
+		AttributeFix-1.14.4-3.0.3.jar AttributeFix {attributefix@3.0.3 DONE}
+		cosmeticbeds-FORGE-1.14.4-2.0.0.1.jar Cosmetic Beds {cosmeticbeds@FORGE-1.14.4-2.0.0.1 DONE}
+		seals-1.14.4-1.0.2.jar Seals {seals@1.0.2 DONE}
+		caelus-FORGE-1.14.4-1.0.1.2.jar Caelus API {caelus@FORGE-1.14.4-1.0.1.2 DONE}
+		colytra-FORGE-1.14.4-2.1.0.jar Colytra {colytra@FORGE-1.14.4-2.1.0 DONE}
+		invtweaks-1.14.4-1.0.2.jar Inventory Tweaks Reborn {invtweaks@1.14.4-1.0.2 DONE}
+		extraboats-1.2.6-1.14.4.jar Extra Boats {extraboats@1.2.6 DONE}
+		create-mc1.14.4_v0.1.1a.jar Create {create@0.1.1a DONE}
+		Waystones_1.14.4-5.1.1.jar Waystones {waystones@5.1.1 DONE}
+		mgui-1.14.4-1.2.0.jar mgui {mgui@1.2.0 DONE}
+		comforts-FORGE-1.14.4-2.0-beta6.jar Comforts {comforts@FORGE-1.14.4-2.0-beta6 DONE}
+		NaturesCompass-1.14.4-1.8.5.jar Nature's Compass {naturescompass@1.14.4-1.8.5 DONE}
+		SimpleStorageNetwork-1.14.4-0.2.0.jar Simple Storage Network {storagenetwork@1.14.4-0.2.0 DONE}
+		gardentools-1.14.4-1.0.0.jar Garden Tools {gardentools@1.14.4-1.0.0 DONE}
+		cursedearth-1.4a.jar Cursed Earth {cursedearth@1.4a DONE}
+		BotanyPots-1.14.4-1.0.10.jar BotanyPots {botanypots@1.0.10 DONE}
+		DefaultSettings-1.14.x-2.1.4.jar DefaultSettings {defaultsettings@2.1.4 DONE}
+		curioofundying-FORGE-1.14.4-2.0.1.jar Curio of Undying {curioofundying@FORGE-1.14.4-2.0.1 DONE}
+		FarmingForBlockheads_1.14.4-5.3.2.jar Farming for Blockheads {farmingforblockheads@5.3.2 DONE}
+		demagnetize-1.14.4-1.2.1.jar Demagnetize {demagnetize@1.14.4-1.2.1 DONE}
+		BonsaiTrees-2.0.2.35.jar Bonsai Trees 2 {bonsaitrees2@2.0.2.35 DONE}
+		mcjtylib-1.14-3.5.17-alpha.jar McJtyLib {mcjtylib@1.14-3.5.17-alpha DONE}
+		rftoolsbase-1.14-0.0.12-alpha.jar RFToolsBase {rftoolsbase@1.14-0.0.12-alpha DONE}
+		rftoolsstorage-1.14-0.0.7-alpha.jar RFToolsStorage {rftoolsstorage@1.14-0.0.7-alpha DONE}
+		ClickMachine-1.14.4-2.1.2.jar Click Machine {clickmachine@2.1.2 DONE}
+		voyage-1.0.0.jar Voyage {voyage@1.0.0 DONE}
+		ToastControl-1.14.4-2.2.0.jar Toast Control {toastcontrol@2.2.0 DONE}
+		PackingTape-1.14.4-0.9.2.jar Packing Tape {packingtape@0.9.2 DONE}
+		traverse-1.14.4-2.0.3.jar Traverse {traverse@1.14.4-2.0.3 DONE}
+		mininggadgets-1.2.3.jar Mining Gadgets {mininggadgets@1.2.3 DONE}
+		CraftTweaker-1.14.4-5.0.1.165.jar CraftTweaker {crafttweaker@5.0.1.165 DONE}
+		rftoolspower-1.14-1.2.12-alpha.jar RFToolsPower {rftoolspower@1.14-1.2.12-alpha DONE}
+		mysticalworld-1.14.4-1.7.2.jar Mystical World {mysticalworld@1.14.4-1.7.2 DONE}
+		campfiretorches-1.14.4-1.0.3.jar Campfire Torches {campfiretorches@1.14.4-1.0.3 DONE}
+		forge-1.14.4-28.2.3-universal.jar Forge {forge@28.2.3 DONE}
+		bountiful-3.0.0.jar Bountiful {bountiful@3.0.0 DONE}
+		QuickLeafDecay-MC1.14.4-1.2.5.jar Quick Leaf Decay {quickleafdecay@1.2.5 DONE}
+		ironchest-1.14.4-9.1.5.jar Iron Chests {ironchest@1.14.3-9.0.3 DONE}
+		CraftingTweaks_1.14.4-10.2.1.jar Crafting Tweaks {craftingtweaks@10.2.1 DONE}
+		forge-1.14.4-28.2.3-client.jar Minecraft {minecraft@1.14.4 DONE}
+		cofh_core-1.14.4-0.3.1b.jar CoFH Core {cofh_core@0.3.1b DONE}
+		ensorcellation-1.14.4-0.3.0b.jar Ensorcellation {ensorcellation@0.3.0b DONE}
+		rftoolsutility-1.14-1.2.14-alpha.jar RFToolsUtility {rftoolsutility@1.14-1.2.14-alpha DONE}
+		Flopper-1.14.4-1.0.6.jar Flopper {flopper@1.0.6 DONE}
+		EnchantmentDescriptions-1.14.4-1.3.14.jar EnchantmentDescriptions {enchdesc@1.3.14 DONE}
+		theoneprobe-1.14-1.4.37.jar The One Probe {theoneprobe@NONE DONE}
+		swingthroughgrass-1.14.4-1.3.2.jar SwingThroughGrass {swingthroughgrass@1.14.4-1.3.2 DONE}
+		MouseTweaks-2.13-mc1.14.4.jar Mouse Tweaks {mousetweaks@2.13 DONE}
+		watercan-1.14.4-2.1.0.jar Watercan {watercan@1.14.4-2.1.0 DONE}
+		titanium-1.14.4-2.2.10.jar Titanium {titanium@2.2.10 DONE}
+		SilentLib-1.14.4-4.4.0+44.jar Silent Lib {silentlib@4.4.0+44 DONE}
+		bluepower-1.14.4-0.3.183-alpha-universal.jar Blue Power {bluepower@0.3.183-alpha DONE}
+		RingOfGrowth-1.14.4-1.0.20.jar Ring of Growth {ring_of_growth@1.0.20 DONE}
+		CapabilityProxy-1.14.4-2.1.5.jar CapabilityProxy {capabilityproxy@2.1.5 DONE}
+		Ding-1.14.4-1.1.0.jar Ding {ding@1.1.0 DONE}
+		creatureslovebeacons-FORGE-1.14.4-2.0.jar Creatures Love Beacons {creatureslovebeacons@FORGE-1.14.4-2.0 DONE}
+		LargeFluidTank-14.9.6.jar FluidTank {fluidtank@14.9.6 DONE}
+		rftoolsbuilder-1.14-1.2.12-alpha.jar RFToolsBuilder {rftoolsbuilder@1.14-1.2.12-alpha DONE}
+		dimdungeons-1.03-forge-1.14.4.jar Dimensional Dungeons {dimdungeons@1.14.4-1.03 DONE}
+		foamdome-3.0.0.jar Foam Dome {foamdome@3.0.0 DONE}
+		Quark-r2.0-212.jar Quark {quark@r2.0-212 DONE}
+		Mantle-1.14.4-1.4.32.jar Mantle {mantle@1.4.32 DONE}
+		Inspirations-1.14.4-1.0.2.jar Inspirations {inspirations@1.14.4-1.0.2 DONE}
+		Xaeros_Minimap_20.5.1_Forge_1.14.4.jar Xaero's Minimap {xaerominimap@20.5.1 DONE}
+		FTBUtilitiesBackups-2.0.0.11.jar FTB Utilities: Backups {ftbbackups@2.0.0.11 DONE}
+		cyclepaintings_1.14-1.1.jar Cycle Paintings {cyclepaintings@1.1 DONE}
+		FastWorkbench-1.14.4-2.1.4.jar FastWorkbench {fastbench@2.1.4 DONE}
+		multibeds-1.14-1.5.2.jar Multi-Beds {multibeds@1.5.0 DONE}
+		StorageDrawers-1.14.4-6.0.6.jar Storage Drawers {storagedrawers@1.14.4-6.0.6 DONE}
+		simplytea-2.0.4.jar Simply Tea {simplytea@2.0.4 DONE}
+		structurize-0.10.245-ALPHA.jar Structurize {structurize@0.10.245-ALPHA DONE}
+		ScreenshotToClipboard-1.14.4-1.0.3.jar Screenshot to Clipboard {screenshotclipboard@1.14.4-1.0.3 DONE}
+		quickstack-2.0.3.jar DropOff {dropoff@2.0.3 DONE}
+		minecolonies-0.10.715-RELEASE-universal.jar Minecolonies {minecolonies@0.10.715-RELEASE DONE}
+		FastFurnace-1.14.4-2.2.4.jar FastFurnace {fastfurnace@2.2.4 DONE}
+		World-Stripper-1.7.2-1.14.4.jar World Stripper {worldstripper@version DONE}
+		AppleSkin-mc1.14.4-forge-1.0.13.jar AppleSkin {appleskin@1.0.13 DONE}
+		engineersdecor-1.14.4-1.0.20-b1.jar Engineer's Decor {engineersdecor@1.0.20-b1 DONE}
+		solcarrot-1.14.4-1.9.4.jar Spice of Life: Carrot Edition {solcarrot@1.14.4-1.9.4 DONE}
+		RingOfAttraction-1.14.4-1.0.20.jar Ring of Attraction {ring_of_attraction@1.0.20 DONE}
+		nps_1.14-2.1.jar Nether Portal Spread {nps@2.1 DONE}
+		modular-routers-1.14.4-5.1.4-9.jar Modular Routers {modularrouters@1.14.4-5.1.4-9 DONE}
+		easyelytrato_1.14-1.2.jar Easy Elytra Takeoff {easyelytrato@1.2 DONE}
+		smallernp_1.14-1.1.jar Smaller Nether Portals {smallernp@1.1 DONE}
+		Aquaculture-1.14.4-2.0.7.jar Aquaculture 2 {aquaculture@1.14.4-2.0.7 DONE}
+		FriendlyFire-1.14.4-3.0.2.jar FriendlyFire {friendlyfire@3.0.2 DONE}
+		mysticalwildlife-1.14.4-1.3.4.jar Mystical Wildlife {mysticalwildlife@1.3.4 DONE}
+		refinedstorageaddons-0.5.jar Refined Storage Addons {refinedstorageaddons@0.5 DONE}
+		Ma-Essentials-1.14.4-1.2.11.jar Ma Essentials {ma-essentials@1.14.4-1.2.11 DONE}
+		CosmeticArmorReworked-1.14.4-v1b.jar CosmeticArmorReworked {cosmeticarmorreworked@1.14.4-v1b DONE}
+		packmode-1.14.4-2.0.0.jar Pack Mode {packmode@1.14.4-2.0.0 DONE}
+		kubejs-forge-1.14.4-2.2.0.27.jar KubeJS {kubejs@2.2.0.27 DONE}
+		OpenLoader-1.14.4-1.0.4.jar OpenLoader {openloader@1.0.4 DONE}
+		DefaultOptions_1.14.4-10.2.7.jar Default Options {defaultoptions@10.2.7 DONE}
+	Pulsar/inspirations loaded Pulses: 
+		- InspirationsShared (Enabled/Forced)
+		- InspirationsBuilding (Enabled/Not Forced)
+		- InspirationsUtility (Enabled/Not Forced)
+		- InspirationsTools (Enabled/Not Forced)
+		- InspirationsTweaks (Enabled/Not Forced)
